@@ -373,6 +373,11 @@ body.dark button.incorrect {
   color: white;
 }
 
+body.dark button:disabled {
+  background-color: #4b5563; /* gray */
+  cursor: not-allowed;
+}
+
 /* 🧾 Result Card */
 body.dark .result-card {
   background-color: #3b3763;
