@@ -361,6 +361,12 @@ body.dark button:hover {
   background-color: #7f76ff; /* brighter on hover */
 }
 
+/* 🔒 Disabled Button */
+body.dark button:disabled {
+  background-color: #4b5563; /* gray */
+  cursor: not-allowed;
+}
+
 /* ✅ Correct Answer */
 body.dark button.correct {
   background-color: #22c55e; /* bright green */
@@ -371,17 +377,6 @@ body.dark button.correct {
 body.dark button.incorrect {
   background-color: #ef4444; /* red */
   color: white;
-}
-
-body.dark button:hover:not(:disabled) {
-  background-color: rgb(170, 73, 255);
-  transform: scale(1.02);
-}
-
-/* 🔒 Disabled Button */
-body.dark button:disabled {
-  background-color: #4b5563; /* gray */
-  cursor: not-allowed;
 }
 
 /* 🧾 Result Card */
