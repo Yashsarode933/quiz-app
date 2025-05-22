@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartQuiz</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="https://emojicdn.elk.sh/%F0%9F%A7%A0" />
+  <meta name="description" content="SmartQuiz – A dynamic quiz app with timer, scoring, categories, and dark mode.">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#7a27ff">
+  
+</head>
+<body>
+  <div class="container fade-in">
+    
+    <!-- 🔘 Dark Mode Toggle -->
+    <div style="display: flex; justify-content: flex-end; margin-bottom: 1rem;">
+      <label class="switch">
+        <input type="checkbox" id="dark-mode-toggle">
+        <span class="slider"></span>
+      </label>
+      <span style="margin-left: 0.5rem; font-size: 0.9rem;">Dark Mode</span>
+    </div>
+
+    <!-- 🧠 Landing Screen -->
+    <div id="landing-screen" class="fade-in">
+      <h1>🧠 SmartQuiz</h1>
+      <p style="text-align: center; font-size: 1.1rem;">Test your knowledge across various topics and difficulties!</p>
+      
+      <div class="select-row">
+        <div class="select-group">
+          <label for="category">Category</label>
+          <select id="category">
+            <option value="9">General Knowledge</option>
+            <option value="17">Science</option>
+            <option value="23">History</option>
+            <option value="21">Sports</option>
+          </select>
+        </div>
+
+        <div class="select-group">
+          <label for="difficulty">Difficulty</label>
+          <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+      </div>
+
+      <div style="text-align: center; padding-top: 2rem;">
+        <button id="start-button">Start Quiz</button>
+      </div>
+    </div>
+
+    <!-- 📋 Quiz Screen -->
+    <div id="quiz" class="hidden fade-in">
+      <div class="timer-bar">
+        <div id="timer">⏱ Time left: <span id="time">15</span>sec</div>
+      </div>
+      <div class="progress-bar">
+        <div id="progress">Question 1 of 10</div>
+      </div>
+
+      <div id="question">Question will appear here</div>
+      <div id="options"></div>
+      <div style="text-align: center; margin-top: 1.5rem;">
+        <button id="next-btn">Next</button>
+      </div>
+    </div>
+
+    <!-- 🏁 Result Screen -->
+    <div id="result" class="hidden fade-in">
+      <h2>🏆 Quiz Complete!</h2>
+      <p class="final-score">Your Score: <span id="score"></span></p>
+      <button id="restart-btn">Play Again</button>
+
+      <h3 style="margin-top: 2rem;">📈 Score History</h3>
+      <ul id="score-history" class="score-list"></ul>
+    </div>
+
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
