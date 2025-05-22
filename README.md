@@ -12,9 +12,11 @@ A sleek and customizable quiz web application with difficulty levels, category s
 
 ## 📸 Screenshots
 
-<!-- Add screenshots here if available -->
-<img src="screenshots/landing.png" width="300"/>  
-<img src="screenshots/quiz.png" width="300"/>  
+### 🖥️ Landing Page
+![Landing Page](screenshots/landing.png)
+
+### 🧠 Quiz in Action
+![Quiz Page](screenshots/quiz.png)
 
 ---
 
